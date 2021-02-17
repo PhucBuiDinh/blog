@@ -4,7 +4,7 @@ backend:
   repo: PhucBuiDinh/blog
   base_url: https://45qsx9luhe.execute-api.us-east-1.amazonaws.com/prod
   auth_endpoint: /oauth/auth
-site_id: www.control-alt-del.org
+site_id: bdphuc.github.io
 media_folder: "static/images" 
 public_folder: "/images" 
 collections:
