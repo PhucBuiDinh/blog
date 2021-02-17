@@ -2,8 +2,8 @@ language: python
 
 install:
   - sudo apt-get install python-pygments
-  - sudo wget -qO hugo_0.80.0_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.deb
-  - sudo dpkg -i hugo_0.80.0_Linux-64bit.deb
+  - sudo wget -qO hugo_0.39_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/download/v0.39/hugo_0.39_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.39_Linux-64bit.deb
 
 script:
   - git submodule foreach -q --recursive 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; [ -z "$branch" ] && git checkout master || git checkout $branch'
@@ -14,9 +14,8 @@ after_success: |
     git add .
     git status
     git commit -m 'Site push'
-    git push https://$GITHUB_USER:$GITHUB_API_KEY@github.com/PhucBuiDinh/bdphuc.github.io master
+    git push https://$GITHUB_USER:$GITHUB_API_KEY@github.com/marksteele/marksteele.github.io master
 
 branches:
   only:
   - master
-~
