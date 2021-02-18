@@ -2,7 +2,7 @@ publish_mode: editorial_workflow
 backend:
   name: github
   repo: PhucBuiDinh/blog
-  base_url:  https://45qsx9luhe.execute-api.us-east-1.amazonaws.com
+  base_url: https://45qsx9luhe.execute-api.us-east-1.amazonaws.com
   auth_endpoint: /prod/auth
 site_id: phucbuidinh.github.io
 media_folder: "static/images" 
